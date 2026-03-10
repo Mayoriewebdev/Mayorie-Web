@@ -6,7 +6,7 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#0b1b44;
+/* background:#0b1b44; */
 position:relative;
 overflow-x:hidden;
 }
@@ -168,7 +168,7 @@ transition: all 0.3s ease;
 }
 
 .btn-primary:hover{
-background:#3592d6;  /* slightly darker blue */
+background:#142c6b;  /* slightly darker blue */
 box-shadow: 0 8px 20px rgba(63,180,255,0.3); /* subtle professional shadow */
 transform: translateY(-2px) scale(1.02); /* small lift and scale */
 }
@@ -205,6 +205,8 @@ flex-wrap:wrap;
 font-size:36px;
 margin-bottom:5px;
 }
+
+
 
 /* HAMBURGER */
 
@@ -301,6 +303,386 @@ gap:20px;
 
 .stats h2{
 font-size:28px;
+}
+
+}
+
+
+
+
+
+/* tech code moving */
+
+.tech-container{
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+}
+
+/* Code Icon */
+
+.code-icon{
+font-size:7vw; /* responsive size */
+font-weight:bold;
+font-family:Consolas, monospace;
+color:#00eaff;
+letter-spacing:5px;
+text-align:center;
+
+/* floating animation */
+animation:float 3s ease-in-out infinite;
+
+/* tech glow */
+text-shadow:
+0 0 10px #00eaff,
+0 0 20px #00eaff,
+0 0 40px #00eaff,
+0 0 80px #0099ff;
+}
+
+/* Floating animation */
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+
+/* Tablet */
+
+@media (max-width:900px){
+
+.code-icon{
+font-size:12vw;
+letter-spacing:3px;
+}
+
+}
+
+
+/* Mobile */
+
+@media (max-width:600px){
+
+.code-icon{
+font-size:18vw;
+letter-spacing:2px;
+}
+
+}
+
+
+
+/* training section */
+
+.training-section{
+padding:80px 8%;
+background:#f5f7fb;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.training-header{
+text-align:center;
+margin-bottom:60px;
+}
+
+.training-header h2{
+font-size:36px;
+color:#0f172a;
+margin-bottom:10px;
+}
+
+.training-header p{
+color:#64748b;
+font-size:16px;
+}
+
+.training-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.training-card{
+background:white;
+padding:30px;
+border-radius:14px;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.training-card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.training-icon{
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.training-icon svg{
+width:24px;
+height:24px;
+}
+
+.training-card h3{
+font-size:18px;
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.training-card p{
+font-size:14px;
+color:#64748b;
+margin-bottom:15px;
+line-height:1.6;
+}
+
+.training-card a{
+font-size:14px;
+font-weight:600;
+text-decoration:none;
+color:#0b1b44;
+}
+
+/* icon colors */
+
+.blue{background:#e8f1ff;color:#2563eb;}
+.purple{background:#f3e8ff;color:#7c3aed;}
+.orange{background:#fff1e6;color:#ea580c;}
+.green{background:#e8f7ec;color:#16a34a;}
+.red{background:#ffecec;color:#dc2626;}
+.indigo{background:#eef2ff;color:#4f46e5;}
+.pink{background:#ffe4f0;color:#db2777;}
+.cyan{background:#e6f8fb;color:#0891b2;}
+
+.training-btn{
+text-align:center;
+margin-top:50px;
+}
+
+.training-btn a{
+background:#3fb4ff;
+color:white;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+transition:all 0.3s ease;
+}
+
+/* Hover Effect */
+.training-btn a:hover{
+background:#142c6b;
+transform:translateY(-3px);
+box-shadow:0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1024px){
+.training-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media (max-width:600px){
+
+.training-header h2{
+font-size:26px;
+}
+
+.training-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+
+/* end of training section  */
+
+
+
+
+
+
+
+/* journey section */
+.journey-section{
+padding:90px 8%;
+background: linear-gradient(180deg, #fff, #ffff);
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.journey-header{
+text-align:center;
+margin-bottom:70px;
+}
+
+.journey-badge{
+display:inline-flex;
+align-items:center;
+gap:8px;
+background:#dff3ee;
+color:#0f766e;
+padding:8px 16px;
+border-radius:20px;
+font-size:14px;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.journey-badge .dot{
+width:8px;
+height:8px;
+background:#0f766e;
+border-radius:50%;
+}
+
+.journey-header h2{
+font-size:42px;
+color:#0f172a;
+margin-bottom:12px;
+}
+
+.journey-header p{
+color:#64748b;
+font-size:16px;
+}
+
+/* steps layout */
+
+.journey-steps{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:35px;
+position:relative;
+}
+
+/* card */
+
+.journey-card{
+background:#fff;
+padding:40px 30px;
+border-radius:16px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.journey-card:hover{
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,0.12);
+}
+
+.journey-card h3{
+font-size:20px;
+margin:20px 0 10px;
+color:#0f172a;
+}
+
+.journey-card p{
+font-size:14px;
+line-height:1.7;
+color:#64748b;
+}
+
+/* icons */
+
+.journey-icon{
+width:70px;
+height:70px;
+margin:auto;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.journey-icon svg{
+width:28px;
+height:28px;
+}
+
+/* step number */
+
+.step-number{
+position:absolute;
+top:-5px;
+right:-5px;
+background:black;
+width:28px;
+height:28px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:13px;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* icon colors */
+
+.green{
+background:#16a085;
+color:white;
+}
+
+.blue{
+background:#3b82f6;
+color:white;
+}
+
+.purple{
+background:#9333ea;
+color:white;
+}
+
+.orange{
+background:#f97316;
+color:white;
+}
+
+/* responsive */
+
+@media (max-width:1100px){
+
+.journey-steps{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:600px){
+
+.journey-header h2{
+font-size:28px;
+}
+
+.journey-steps{
+grid-template-columns:1fr;
+gap:25px;
 }
 
 }
